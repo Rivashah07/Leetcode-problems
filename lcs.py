@@ -1,6 +1,5 @@
 class Solution:
     def stringIndices(self, wordsContainer, wordsQuery):
-
         trie = {}
         END = "#"
         def better(a, b):
@@ -12,7 +11,6 @@ class Solution:
                 return b
 
             return a
-
         best = 0
         for i in range(len(wordsContainer)):
             best = better(best, i)
@@ -34,18 +32,12 @@ class Solution:
                     node[END] = i
                 else:
                     node[END] = better(node[END], i)
-
         ans = []
-
         for q in wordsQuery:
-
             node = trie
-
             for ch in reversed(q):
-
                 if ch not in node:
                     break
-
                 node = node[ch]
 
             ans.append(node[END])
