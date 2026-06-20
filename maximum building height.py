@@ -1,4 +1,4 @@
-
+# 1840 Maximum building height
 class Solution(object):
     def maxBuilding(self, n, restrictions):
         restrictions.append([1, 0])
