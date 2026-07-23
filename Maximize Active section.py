@@ -1,4 +1,4 @@
-#3499 Maximize Active Sections with Trade 
+#3499 Maximize Active Sections with Trade 1
 class Solution(object):
     def maxActiveSectionsAfterTrade(self, s):
         t = "1" + s + "1"
