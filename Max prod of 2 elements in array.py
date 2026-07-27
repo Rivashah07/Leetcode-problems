@@ -1,0 +1,5 @@
+#1464 Maximum Product of Two Elements in an Array
+class Solution(object):
+    def maxProduct(self, nums):
+        nums.sort()
+        return (nums[-1] - 1) * (nums[-2] - 1)
